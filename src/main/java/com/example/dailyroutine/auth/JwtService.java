@@ -1,10 +1,14 @@
 package com.example.dailyroutine.auth;
 
+import com.example.dailyroutine.common.exception.EntityNotFoundException;
+import com.example.dailyroutine.model.entity.User;
+import com.example.dailyroutine.repository.UserRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
@@ -16,9 +20,17 @@ import java.util.Map;
 import java.util.function.Function;
 
 @Service
+@RequiredArgsConstructor
 public class JwtService {
+    private final UserRepository userRepository;
+
     @Value("${jwt.secret}")
     private String SECRET_KEY;
+
+    public User extractUser(String token) {
+        String username = extractUsername(token);
+        return userRepository.findByEmail(username).orElseThrow(() -> new EntityNotFoundException("User not found"));
+    }
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);

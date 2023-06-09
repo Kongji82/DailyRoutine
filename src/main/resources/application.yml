@@ -3,10 +3,10 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password:
-    url: jdbc:mysql://localhost:3306/DailyRoutine?serverTime=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/dailyroutine?serverTime=Asia/Seoul
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     properties:
       hibernate:
         format_sql: true

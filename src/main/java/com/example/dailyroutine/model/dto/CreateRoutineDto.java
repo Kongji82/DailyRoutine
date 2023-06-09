@@ -12,9 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class CreateRoutineDto {
-    private String name;
+    private String title;
     private String description;
-    private String startTime;
-    private String endTime;
     private List<CreateTodoDto> todos;
 }

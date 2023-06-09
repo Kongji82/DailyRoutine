@@ -21,6 +21,7 @@ import java.util.List;
 @Table(name = "`user`")
 public class User implements UserDetails {
     @Id
+    @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -30,7 +31,7 @@ public class User implements UserDetails {
     @Column(length = 50, name = "username")
     private String username;
 
-    @Column(length = 50, name = "password")
+    @Column(length = 200, name = "password")
     private String password;
 
     @Enumerated(EnumType.STRING)

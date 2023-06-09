@@ -14,6 +14,6 @@ import java.time.LocalTime;
 public class CreateTodoDto {
     private String title;
     private String description;
-    private LocalTime startTime;
-    private LocalTime endTime;
+    private String startTime;
+    private String endTime;
 }
