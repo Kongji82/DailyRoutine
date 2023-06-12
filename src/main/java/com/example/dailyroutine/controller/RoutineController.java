@@ -18,8 +18,8 @@ import java.util.List;
 public class RoutineController {
     private final RoutineServiceImpl routineService;
     @PostMapping("/create")
-    public ResponseEntity<Routine> createRoutine(HttpServletRequest request, @RequestBody CreateRoutineDto createRoutineDto){
-        Routine routine = routineService.createRoutine(request, createRoutineDto);
+    public ResponseEntity<Routine> createRoutine(@AuthenticationPrincipal User user, @RequestBody CreateRoutineDto createRoutineDto){
+        Routine routine = routineService.createRoutine(user, createRoutineDto);
         return ResponseEntity.ok().body(routine);
     }
 
