@@ -1,5 +1,6 @@
-package com.example.dailyroutine.model.entity;
+package com.example.dailyroutine.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,6 +14,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonIgnoreProperties({"user"})
 public class Routine {
     @Id
     @Column(name = "routine_id")

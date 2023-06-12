@@ -1,13 +1,13 @@
 package com.example.dailyroutine.service;
 
-import com.example.dailyroutine.model.dto.CreateRoutineDto;
-import com.example.dailyroutine.model.entity.Routine;
-import jakarta.servlet.http.HttpServletRequest;
+import com.example.dailyroutine.dto.CreateRoutineDto;
+import com.example.dailyroutine.entity.Routine;
+import com.example.dailyroutine.entity.User;
 
 import java.util.List;
 
 public interface RoutineService {
-    Routine createRoutine(HttpServletRequest request, CreateRoutineDto createRoutineRequest);
+    Routine createRoutine(User user, CreateRoutineDto createRoutineRequest);
     List<Routine> getAllRoutine();
     Routine getRoutineById(Long id);
 }

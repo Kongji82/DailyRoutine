@@ -1,6 +1,6 @@
 package com.example.dailyroutine.repository;
 
-import com.example.dailyroutine.model.entity.Routine;
+import com.example.dailyroutine.entity.Routine;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

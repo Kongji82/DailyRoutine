@@ -1,15 +1,12 @@
 package com.example.dailyroutine.service;
 
-import com.example.dailyroutine.auth.JwtService;
 import com.example.dailyroutine.common.exception.EntityNotFoundException;
-import com.example.dailyroutine.model.dto.CreateRoutineDto;
-import com.example.dailyroutine.model.entity.Routine;
-import com.example.dailyroutine.model.entity.Todo;
-import com.example.dailyroutine.model.entity.User;
+import com.example.dailyroutine.dto.CreateRoutineDto;
+import com.example.dailyroutine.entity.Routine;
+import com.example.dailyroutine.entity.Todo;
+import com.example.dailyroutine.entity.User;
 import com.example.dailyroutine.repository.RoutineRepository;
 import com.example.dailyroutine.repository.TodoRepository;
-import com.example.dailyroutine.repository.UserRepository;
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -21,13 +18,10 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class RoutineServiceImpl implements RoutineService{
     private final RoutineRepository routineRepository;
-    private final JwtService jwtService;
     private final TodoRepository todoRepository;
 
     @Override
-    public Routine createRoutine(HttpServletRequest request, CreateRoutineDto createRoutineRequest) {
-        String token = request.getHeader("Authorization").substring(7);
-        User user = jwtService.extractUser(token);
+    public Routine createRoutine(User user,  CreateRoutineDto createRoutineRequest) {
         List<Todo> todos = createRoutineRequest.getTodos().stream()
                 .map(item -> {
                     LocalTime startTime = LocalTime.parse(item.getStartTime());

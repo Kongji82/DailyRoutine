@@ -1,19 +1,18 @@
-package com.example.dailyroutine.model.dto;
+package com.example.dailyroutine.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalTime;
+import java.util.List;
 
-@Builder
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CreateTodoDto {
+@Builder
+public class CreateRoutineDto {
     private String title;
     private String description;
-    private String startTime;
-    private String endTime;
+    private List<CreateTodoDto> todos;
 }
