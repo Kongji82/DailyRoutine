@@ -2,21 +2,22 @@ package com.example.dailyroutine.controller;
 
 import com.example.dailyroutine.auth.AuthenticationRequest;
 import com.example.dailyroutine.auth.AuthenticationResponse;
+import com.example.dailyroutine.auth.JwtService;
 import com.example.dailyroutine.auth.RegisterRequest;
 import com.example.dailyroutine.service.AuthServiceImpl;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
 
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
 public class AuthController {
     private final AuthServiceImpl authService;
-
+    private final JwtService jwtService;
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody RegisterRequest registerRequest){
         System.out.println(registerRequest);
@@ -26,4 +27,12 @@ public class AuthController {
     public ResponseEntity<AuthenticationResponse> login(@RequestBody AuthenticationRequest request){
         return ResponseEntity.ok(authService.authenticate(request));
     }
+
+    @PostMapping("/verify")
+    public ResponseEntity<Boolean> authenticate(@RequestBody HashMap<String, String> map){
+        String token = map.get("token");
+        Boolean tokenExpired = jwtService.isTokenExpired(token);
+        return ResponseEntity.ok(tokenExpired);
+    }
+
 }
