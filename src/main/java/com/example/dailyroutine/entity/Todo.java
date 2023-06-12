@@ -1,4 +1,4 @@
-package com.example.dailyroutine.model.entity;
+package com.example.dailyroutine.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

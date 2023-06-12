@@ -1,7 +1,7 @@
 package com.example.dailyroutine.auth;
 
 import com.example.dailyroutine.common.exception.EntityNotFoundException;
-import com.example.dailyroutine.model.entity.User;
+import com.example.dailyroutine.entity.User;
 import com.example.dailyroutine.repository.UserRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -22,15 +22,9 @@ import java.util.function.Function;
 @Service
 @RequiredArgsConstructor
 public class JwtService {
-    private final UserRepository userRepository;
 
     @Value("${jwt.secret}")
     private String SECRET_KEY;
-
-    public User extractUser(String token) {
-        String username = extractUsername(token);
-        return userRepository.findByEmail(username).orElseThrow(() -> new EntityNotFoundException("User not found"));
-    }
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -61,7 +55,7 @@ public class JwtService {
         return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
     }
 
-    private boolean isTokenExpired(String token) {
+    public boolean isTokenExpired(String token) {
         return extractExpiration(token).before(new Date());
     }
 
@@ -82,4 +76,5 @@ public class JwtService {
         byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);
         return Keys.hmacShaKeyFor(keyBytes);
     }
+
 }

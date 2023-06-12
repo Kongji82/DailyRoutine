@@ -25,6 +25,8 @@ public class SecurityConfiguration {
                 .disable()
                 .authorizeHttpRequests()
                 .requestMatchers("/api/auth/**").permitAll()
+                .requestMatchers("/api/routine/**").permitAll()
+                .requestMatchers("/api/routine/create").authenticated()
                 .anyRequest()
                 .authenticated()
                 .and()
