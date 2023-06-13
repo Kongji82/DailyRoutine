@@ -1,0 +1,23 @@
+###
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjU4OTM3LCJleHAiOjE2ODY2NjI1Mzd9.GsBbk4ciEXTp2sT_HuoF4JL_adX0lUVwFoMbn4FLgmA
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
