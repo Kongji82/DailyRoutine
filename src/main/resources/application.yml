@@ -3,10 +3,10 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password:
-    url: jdbc:mysql://localhost:3306/DailyRoutine?serverTime=Asia/Seoul
+    url: jdbc:mysql://localhost:3306/dailyroutine?serverTime=Asia/Seoul
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: create
     properties:
       hibernate:
         format_sql: true
@@ -15,3 +15,7 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
 
+jwt:
+  header: Authorization
+  secret: "2A472D4B614E645267556B58703273357638792F423F4528482B4D6251655368"
+  token-validity-in-seconds: 3600
