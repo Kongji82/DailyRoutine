@@ -6,7 +6,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Builder
@@ -14,6 +18,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@EntityListeners(AuditingEntityListener.class)
 @JsonIgnoreProperties({"user"})
 public class Routine {
     @Id
@@ -29,4 +34,8 @@ public class Routine {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+    @CreatedDate
+    private LocalDateTime createdAt;
 }
+
