@@ -1,0 +1,862 @@
+POST http://localhost:8080/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMzU0LCJleHAiOjE2ODY2ODM5NTR9.6rY3AOv99lZ6UWrfHhzndQlwAg9rrpnOh86CAG4Bqj8
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "kongji"
+}
+
+<> 2023-06-14T031927.200.json
+
+###
+
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMzU0LCJleHAiOjE2ODY2ODM5NTR9.6rY3AOv99lZ6UWrfHhzndQlwAg9rrpnOh86CAG4Bqj8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T031923.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T031914.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T031913.200.json
+
+###
+
+POST http://localhost:8080/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMTk3LCJleHAiOjE2ODY2ODM3OTd9.P7tyw0QeW9Ft1ZZXoB9KB9vqr3bXmwwpTALiXOonxEM
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "kongji"
+}
+
+<> 2023-06-14T031654.200.json
+
+###
+
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMTk3LCJleHAiOjE2ODY2ODM3OTd9.P7tyw0QeW9Ft1ZZXoB9KB9vqr3bXmwwpTALiXOonxEM
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T031647.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T031637.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T031636.200.json
+
+###
+
+POST http://localhost:8080/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMDMzLCJleHAiOjE2ODY2ODM2MzN9.B34okVrOJkaMVHsN7EmT7Acjerp6Sytw8IChXQaPKYg
+Content-Length: 26
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "kongji"
+}
+
+<> 2023-06-14T031425.200.json
+
+###
+
+POST http://localhost:8080/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMDMzLCJleHAiOjE2ODY2ODM2MzN9.B34okVrOJkaMVHsN7EmT7Acjerp6Sytw8IChXQaPKYg
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "test"
+}
+
+<> 2023-06-14T031408.200.json
+
+###
+
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMDMzLCJleHAiOjE2ODY2ODM2MzN9.B34okVrOJkaMVHsN7EmT7Acjerp6Sytw8IChXQaPKYg
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T031401.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T031353.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T031351.200.json
+
+###
+
+POST http://localhost:8080/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc5NzkzLCJleHAiOjE2ODY2ODMzOTN9.QW0LifNZYOxBHR3XX5xc7itfWZHX0EtcmQEKZY3xAS0
+Content-Length: 24
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "username": "test"
+}
+
+<> 2023-06-14T031056.200.json
+
+###
+
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc5NzkzLCJleHAiOjE2ODY2ODMzOTN9.QW0LifNZYOxBHR3XX5xc7itfWZHX0EtcmQEKZY3xAS0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T031004.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T030953.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T030952.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc4MjY5LCJleHAiOjE2ODY2ODE4Njl9.LsHCdIQXEF0zluzFJYP9inIFtxgGmsmP-RSYUtzn7q8
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T024502.200.json
+
+###
+
+DELETE http://localhost:8080/api/routine/delete/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc4MjY5LCJleHAiOjE2ODY2ODE4Njl9.LsHCdIQXEF0zluzFJYP9inIFtxgGmsmP-RSYUtzn7q8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T024454.200.txt
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc4MjY5LCJleHAiOjE2ODY2ODE4Njl9.LsHCdIQXEF0zluzFJYP9inIFtxgGmsmP-RSYUtzn7q8
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T024443.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T024429.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T024428.200.json
+
+###
+
+DELETE http://localhost:8080/api/routine/delete/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T024235.404.json
+
+###
+
+DELETE http://localhost:8080/api/routine/delete/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T024210.404.json
+
+###
+
+DELETE http://localhost:8080/api/routine/delete/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T024207.404.json
+
+###
+
+DELETE http://localhost:8080/api/routine/delete/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T024151.404.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T024148.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T024005.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T023911.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T023718.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T023631.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T023512.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T023351.200.json
+
+###
+
+DELETE http://localhost:8080/api/routine/delete/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T023253.200.txt
+
+###
+
+GET http://localhost:8080/api/routine/getbyuser
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T023237.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T023227.200.json
+
+###
+
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjcwNjI4LCJleHAiOjE2ODY2NzQyMjh9.gwqxkXeUuOWDlSiUw2VklmoZHMcv8mELySzIcqgBD78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T023205-1.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T023205.200.json
+
+###
+
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25nQHRlc3QuY29tIiwiaWF0IjoxNjg2NjcwNjcwLCJleHAiOjE2ODY2NzQyNzB9.WX3zm26c5NhkbjoNRUaS2iZLBG3bPgD7NnjVWaogkns
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T003820.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 51
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "kong@test.com",
+  "password": "123"
+}
+
+<> 2023-06-14T003750.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "kong@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T003749.200.json
+
+###
+
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjcwNjI4LCJleHAiOjE2ODY2NzQyMjh9.gwqxkXeUuOWDlSiUw2VklmoZHMcv8mELySzIcqgBD78
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T003718.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T003708.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T003707.200.json
+
+###
+
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjY5MDcwLCJleHAiOjE2ODY2NzI2NzB9.n1F7sQdppdI3eIHxgm-04-pWobLacDoAJUTTfM2vT0g
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T001157.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T001156.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T001155.200.json
+
+###
+
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjY5MDcwLCJleHAiOjE2ODY2NzI2NzB9.n1F7sQdppdI3eIHxgm-04-pWobLacDoAJUTTfM2vT0g
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T001121.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T001110.200.json
+
+###
+

@@ -18,9 +18,16 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8080/api/auth/userinfo
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjcwNjI4LCJleHAiOjE2ODY2NzQyMjh9.gwqxkXeUuOWDlSiUw2VklmoZHMcv8mELySzIcqgBD78
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMzU0LCJleHAiOjE2ODY2ODM5NTR9.6rY3AOv99lZ6UWrfHhzndQlwAg9rrpnOh86CAG4Bqj8
 
+###
+POST http://localhost:8080/api/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMzU0LCJleHAiOjE2ODY2ODM5NTR9.6rY3AOv99lZ6UWrfHhzndQlwAg9rrpnOh86CAG4Bqj8
 
+{
+  "username": "kongji"
+}
 
 
 ###
