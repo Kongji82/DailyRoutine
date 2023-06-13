@@ -72,7 +72,8 @@ public class RoutineServiceImpl implements RoutineService{
         Routine routine = routineRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("루틴을 찾을 수 없습니다."));
 
-
+        List<Scrap> scrapList = scrapRepository.findAllByRoutine(routine);
+        scrapList.forEach(scrap -> scrapRepository.delete(scrap));
 
         if (routine.getUser().getId().equals(user.getId())) {
             routineRepository.deleteById(id);
