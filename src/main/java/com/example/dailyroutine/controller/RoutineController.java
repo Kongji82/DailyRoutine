@@ -2,6 +2,7 @@ package com.example.dailyroutine.controller;
 
 import com.example.dailyroutine.dto.CreateRoutineDto;
 import com.example.dailyroutine.entity.Routine;
+import com.example.dailyroutine.entity.Scrap;
 import com.example.dailyroutine.entity.User;
 import com.example.dailyroutine.service.RoutineServiceImpl;
 import jakarta.servlet.http.HttpServletRequest;
@@ -45,5 +46,17 @@ public class RoutineController {
     public ResponseEntity<String> deleteRoutine(@AuthenticationPrincipal User user, @PathVariable Long id){
         routineService.deleteRoutine(user, id);
         return ResponseEntity.ok().body("Routine deleted");
+    }
+
+    @GetMapping("/scrap/{id}")
+    public ResponseEntity<String> scrapRoutine(@AuthenticationPrincipal User user, @PathVariable Long id){
+        routineService.scrapRoutine(user, id);
+        return ResponseEntity.ok().body("Routine scrapped");
+    }
+
+    @GetMapping("/scrap/get")
+    public ResponseEntity<List<Routine>> getScrapRoutine(@AuthenticationPrincipal User user){
+        List<Routine> scrapList = routineService.getScrapRoutine(user);
+        return ResponseEntity.ok().body(scrapList);
     }
  }

@@ -3,9 +3,11 @@ package com.example.dailyroutine.service;
 import com.example.dailyroutine.common.exception.EntityNotFoundException;
 import com.example.dailyroutine.dto.CreateRoutineDto;
 import com.example.dailyroutine.entity.Routine;
+import com.example.dailyroutine.entity.Scrap;
 import com.example.dailyroutine.entity.Todo;
 import com.example.dailyroutine.entity.User;
 import com.example.dailyroutine.repository.RoutineRepository;
+import com.example.dailyroutine.repository.ScrapRepository;
 import com.example.dailyroutine.repository.TodoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -19,6 +21,7 @@ import java.util.stream.Collectors;
 public class RoutineServiceImpl implements RoutineService{
     private final RoutineRepository routineRepository;
     private final TodoRepository todoRepository;
+    private final ScrapRepository scrapRepository;
 
     @Override
     public Routine createRoutine(User user,  CreateRoutineDto createRoutineRequest) {
@@ -68,10 +71,30 @@ public class RoutineServiceImpl implements RoutineService{
     public void deleteRoutine(User user, Long id) {
         Routine routine = routineRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("루틴을 찾을 수 없습니다."));
+
+
+
         if (routine.getUser().getId().equals(user.getId())) {
             routineRepository.deleteById(id);
         } else {
             throw new EntityNotFoundException("루틴을 찾을 수 없습니다.");
         }
+    }
+
+    public void scrapRoutine(User user, Long id) {
+        Routine routine = routineRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("루틴을 찾을 수 없습니다."));
+
+        Scrap scrap = Scrap.builder()
+                .routine(routine)
+                .user(user)
+                .build();
+        scrapRepository.save(scrap);
+    }
+
+    public List<Routine> getScrapRoutine(User user) {
+        return scrapRepository.findAllByUser(user).stream()
+                .map(Scrap::getRoutine)
+                .collect(Collectors.toList());
     }
 }
