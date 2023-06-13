@@ -15,3 +15,7 @@ Content-Type: application/json
 "email": "test@test.com",
 "password": "123"
 }
+
+###
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjY5MDcwLCJleHAiOjE2ODY2NzI2NzB9.n1F7sQdppdI3eIHxgm-04-pWobLacDoAJUTTfM2vT0g
