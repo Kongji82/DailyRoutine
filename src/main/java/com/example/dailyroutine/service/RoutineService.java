@@ -10,4 +10,5 @@ public interface RoutineService {
     Routine createRoutine(User user, CreateRoutineDto createRoutineRequest);
     List<Routine> getAllRoutine();
     Routine getRoutineById(Long id);
+
 }

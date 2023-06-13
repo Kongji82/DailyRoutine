@@ -35,5 +35,11 @@ public class RoutineController {
         return ResponseEntity.ok().body(routine);
     }
 
+    @GetMapping("/getbyuser")
+    public ResponseEntity<List<Routine>> getRoutineByUser(@AuthenticationPrincipal User user){
+        List<Routine> routineList = routineService.getRoutineByUser(user);
+        return ResponseEntity.ok().body(routineList);
+    }
+
 
  }

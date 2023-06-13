@@ -1,7 +1,7 @@
 ###
 POST http://localhost:8080/api/routine/create
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjU4OTM3LCJleHAiOjE2ODY2NjI1Mzd9.GsBbk4ciEXTp2sT_HuoF4JL_adX0lUVwFoMbn4FLgmA
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2NjgzODIsImV4cCI6MTY4NjY3MTk4Mn0.v_JN20KgCBn_eqMf2akmTUPT4dnvjJjZ-EgMbvbYwyU
 
 {
   "title": "Morning Routine",
@@ -21,3 +21,8 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0I
     }
   ]
 }
+
+###
+GET http://localhost:8080/api/routine/getbyuser
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjY4MTg4LCJleHAiOjE2ODY2NzE3ODh9.2BoZ8oew9oZRY8i-LgBVMa-ZHP16mqtTTEpgeFsexjc

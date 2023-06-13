@@ -22,6 +22,7 @@ public class RoutineServiceImpl implements RoutineService{
 
     @Override
     public Routine createRoutine(User user,  CreateRoutineDto createRoutineRequest) {
+        System.out.println(user);
         List<Todo> todos = createRoutineRequest.getTodos().stream()
                 .map(item -> {
                     LocalTime startTime = LocalTime.parse(item.getStartTime());
@@ -59,4 +60,8 @@ public class RoutineServiceImpl implements RoutineService{
                 .orElseThrow(() -> new EntityNotFoundException("루틴을 찾을 수 없습니다."));
     }
 
+
+    public List<Routine> getRoutineByUser(User user) {
+        return routineRepository.findAllByUser(user);
+    }
 }
