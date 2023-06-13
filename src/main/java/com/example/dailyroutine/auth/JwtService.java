@@ -1,8 +1,5 @@
 package com.example.dailyroutine.auth;
 
-import com.example.dailyroutine.common.exception.EntityNotFoundException;
-import com.example.dailyroutine.entity.User;
-import com.example.dailyroutine.repository.UserRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -25,6 +22,8 @@ public class JwtService {
 
     @Value("${jwt.secret}")
     private String SECRET_KEY;
+    @Value("${jwt.token-validity-in-seconds}")
+    private long TOKEN_VALIDITY_IN_SECONDS;
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
@@ -45,7 +44,7 @@ public class JwtService {
                 .setClaims(extraClaims)
                 .setSubject(userDetails.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60 * 60))
+                .setExpiration(new Date(System.currentTimeMillis() + TOKEN_VALIDITY_IN_SECONDS * 1000))
                 .signWith(getSignKey(), SignatureAlgorithm.HS256)
                 .compact();
     }
