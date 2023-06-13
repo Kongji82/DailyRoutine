@@ -64,4 +64,14 @@ public class RoutineServiceImpl implements RoutineService{
     public List<Routine> getRoutineByUser(User user) {
         return routineRepository.findAllByUser(user);
     }
+
+    public void deleteRoutine(User user, Long id) {
+        Routine routine = routineRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("루틴을 찾을 수 없습니다."));
+        if (routine.getUser().getId().equals(user.getId())) {
+            routineRepository.deleteById(id);
+        } else {
+            throw new EntityNotFoundException("루틴을 찾을 수 없습니다.");
+        }
+    }
 }

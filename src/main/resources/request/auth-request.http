@@ -18,4 +18,30 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8080/api/auth/userinfo
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjY5MDcwLCJleHAiOjE2ODY2NzI2NzB9.n1F7sQdppdI3eIHxgm-04-pWobLacDoAJUTTfM2vT0g
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjcwNjI4LCJleHAiOjE2ODY2NzQyMjh9.gwqxkXeUuOWDlSiUw2VklmoZHMcv8mELySzIcqgBD78
+
+
+
+
+###
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "kong@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+###
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "kong@test.com",
+  "password": "123"
+}
+
+###
+GET http://localhost:8080/api/auth/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25nQHRlc3QuY29tIiwiaWF0IjoxNjg2NjcwNjcwLCJleHAiOjE2ODY2NzQyNzB9.WX3zm26c5NhkbjoNRUaS2iZLBG3bPgD7NnjVWaogkns

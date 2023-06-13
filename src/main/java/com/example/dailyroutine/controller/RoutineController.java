@@ -41,5 +41,9 @@ public class RoutineController {
         return ResponseEntity.ok().body(routineList);
     }
 
-
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> deleteRoutine(@AuthenticationPrincipal User user, @PathVariable Long id){
+        routineService.deleteRoutine(user, id);
+        return ResponseEntity.ok().body("Routine deleted");
+    }
  }
