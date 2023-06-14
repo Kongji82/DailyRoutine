@@ -17,7 +17,7 @@ public class Scrap {
     @GeneratedValue
     private Long id;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     private Routine routine;
 
     @ManyToOne
