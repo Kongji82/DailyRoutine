@@ -37,9 +37,6 @@ public class AuthController {
         Boolean tokenExpired = jwtService.isTokenExpired(token);
         return ResponseEntity.ok(tokenExpired);
     }
-    @GetMapping("userinfo")
-    public ResponseEntity<User> getUserInfo(@AuthenticationPrincipal User user){
-        return ResponseEntity.ok(user);
-    }
+
 
 }

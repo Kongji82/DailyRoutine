@@ -1,5 +1,6 @@
 package com.example.dailyroutine.service;
 
+import com.example.dailyroutine.common.exception.EntityDuplicateException;
 import com.example.dailyroutine.common.exception.EntityNotFoundException;
 import com.example.dailyroutine.dto.CreateRoutineDto;
 import com.example.dailyroutine.entity.Routine;
@@ -18,7 +19,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class RoutineServiceImpl implements RoutineService{
+public class RoutineServiceImpl implements RoutineService, ScrapService{
     private final RoutineRepository routineRepository;
     private final TodoRepository todoRepository;
     private final ScrapRepository scrapRepository;
@@ -63,11 +64,12 @@ public class RoutineServiceImpl implements RoutineService{
                 .orElseThrow(() -> new EntityNotFoundException("루틴을 찾을 수 없습니다."));
     }
 
-
+    @Override
     public List<Routine> getRoutineByUser(User user) {
         return routineRepository.findAllByUser(user);
     }
 
+    @Override
     public void deleteRoutine(User user, Long id) {
         Routine routine = routineRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("루틴을 찾을 수 없습니다."));
@@ -82,20 +84,34 @@ public class RoutineServiceImpl implements RoutineService{
         }
     }
 
-    public void scrapRoutine(User user, Long id) {
-        Routine routine = routineRepository.findById(id)
+    @Override
+    public void scrapRoutine(User user, Long routineId) {
+        Routine routine = routineRepository.findById(routineId)
                 .orElseThrow(() -> new EntityNotFoundException("루틴을 찾을 수 없습니다."));
 
+        if (scrapRepository.findByRoutine(routine).isPresent()) {
+            throw new EntityDuplicateException("이미 스크랩한 루틴입니다.");
+        }
         Scrap scrap = Scrap.builder()
                 .routine(routine)
                 .user(user)
                 .build();
+
         scrapRepository.save(scrap);
     }
-
+    @Override
     public List<Routine> getScrapRoutine(User user) {
         return scrapRepository.findAllByUser(user).stream()
                 .map(Scrap::getRoutine)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public void deleteScrap(User user, Long routineId) {
+        Scrap scrap = scrapRepository.findByRoutineAndUser(routineRepository.findById(routineId)
+                .orElseThrow(() -> new EntityNotFoundException("루틴을 찾을 수 없습니다.")), user)
+                .orElseThrow(() -> new EntityNotFoundException("스크랩을 찾을수 없습니다."));
+
+        scrapRepository.delete(scrap);
     }
 }

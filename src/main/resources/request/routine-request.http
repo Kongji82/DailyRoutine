@@ -1,7 +1,7 @@
 ###
 POST http://localhost:8080/api/routine/create
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc4MjY5LCJleHAiOjE2ODY2ODE4Njl9.LsHCdIQXEF0zluzFJYP9inIFtxgGmsmP-RSYUtzn7q8
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ
 
 {
   "title": "Morning Routine",

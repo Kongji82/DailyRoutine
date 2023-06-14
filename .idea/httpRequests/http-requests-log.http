@@ -1,3 +1,506 @@
+GET http://localhost:8080/api/routine/scrap/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T200604.200.json
+
+###
+
+DELETE http://localhost:8080/api/routine/scrap/delete?id=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T200602.200.txt
+
+###
+
+GET http://localhost:8080/api/routine/scrap/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T200545.200.json
+
+###
+
+GET http://localhost:8080/api/routine/scrap/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T200540.200.txt
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T200527.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T200525.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T200433.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T200431.200.json
+
+###
+
+GET http://localhost:8080/api/routine/scrap/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwMzQ3LCJleHAiOjE2ODY3NDM5NDd9.CqYkfoAz-A63vaMZmLZwpce_b0aPx30_lLnAGFhnhk4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T195945.200.json
+
+###
+
+GET http://localhost:8080/api/routine/scrap/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwMzQ3LCJleHAiOjE2ODY3NDM5NDd9.CqYkfoAz-A63vaMZmLZwpce_b0aPx30_lLnAGFhnhk4
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T195939.200.txt
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwMzQ3LCJleHAiOjE2ODY3NDM5NDd9.CqYkfoAz-A63vaMZmLZwpce_b0aPx30_lLnAGFhnhk4
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T195923.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwMzQ3LCJleHAiOjE2ODY3NDM5NDd9.CqYkfoAz-A63vaMZmLZwpce_b0aPx30_lLnAGFhnhk4
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T195920.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T195907.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T195904.200.json
+
+###
+
+GET http://localhost:8080/api/user/userinfo
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY3MDI0MzYsImV4cCI6MTY4NjcwNjAzNn0.ZYYZGucQCb54NXFOoLgNP052-blbx8cZgjwTgQMcicY
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T092931.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgxMzQwLCJleHAiOjE2ODY2ODQ5NDB9.8ykB0PQVrxrDR51h0x083X2rclkDxPCb6xQBP3Cyb0A
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T033549.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T033540.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T033539.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgxMjAwLCJleHAiOjE2ODY2ODQ4MDB9.sevhdEqbzjUdNLdVXd139vUVoFa2DXyGnWAu48SxU7k
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T033338.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T033320.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T033319.200.json
+
+###
+
+GET http://localhost:8080/api/routine/scrap/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgxMDA1LCJleHAiOjE2ODY2ODQ2MDV9.tK5ZQRPAE5Zgp1DfRTJR7vFFHSZxVF-IIn3-AnagDM0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T033206.200.json
+
+###
+
+GET http://localhost:8080/api/routine/scrap/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgxMDA1LCJleHAiOjE2ODY2ODQ2MDV9.tK5ZQRPAE5Zgp1DfRTJR7vFFHSZxVF-IIn3-AnagDM0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-14T033050.200.txt
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgxMDA1LCJleHAiOjE2ODY2ODQ2MDV9.tK5ZQRPAE5Zgp1DfRTJR7vFFHSZxVF-IIn3-AnagDM0
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T033030.200.json
+
+###
+
+POST http://localhost:8080/api/routine/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgxMDA1LCJleHAiOjE2ODY2ODQ2MDV9.tK5ZQRPAE5Zgp1DfRTJR7vFFHSZxVF-IIn3-AnagDM0
+Content-Length: 411
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "title": "Morning Routine",
+  "description": "Start the day with a productive routine",
+  "todos": [
+    {
+      "title": "Exercise",
+      "description": "Do some stretching and cardio",
+      "startTime": "08:00",
+      "endTime": "08:30"
+    },
+    {
+      "title": "Meditation",
+      "description": "Practice mindfulness and meditation",
+      "startTime": "08:30",
+      "endTime": "09:00"
+    }
+  ]
+}
+
+<> 2023-06-14T033029.200.json
+
+###
+
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+Content-Length: 47
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"email": "test@test.com",
+"password": "123"
+}
+
+<> 2023-06-14T033005-1.200.json
+
+###
+
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+Content-Length: 73
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "test@test.com",
+  "username": "test",
+  "password": "123"
+}
+
+<> 2023-06-14T033005.200.json
+
+###
+
 POST http://localhost:8080/api/user/update
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjgwMzU0LCJleHAiOjE2ODY2ODM5NTR9.6rY3AOv99lZ6UWrfHhzndQlwAg9rrpnOh86CAG4Bqj8
@@ -362,501 +865,6 @@ User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
 <> 2023-06-14T024235.404.json
-
-###
-
-DELETE http://localhost:8080/api/routine/delete/8
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-14T024210.404.json
-
-###
-
-DELETE http://localhost:8080/api/routine/delete/8
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-14T024207.404.json
-
-###
-
-DELETE http://localhost:8080/api/routine/delete/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-14T024151.404.json
-
-###
-
-POST http://localhost:8080/api/routine/create
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
-Content-Length: 411
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "title": "Morning Routine",
-  "description": "Start the day with a productive routine",
-  "todos": [
-    {
-      "title": "Exercise",
-      "description": "Do some stretching and cardio",
-      "startTime": "08:00",
-      "endTime": "08:30"
-    },
-    {
-      "title": "Meditation",
-      "description": "Practice mindfulness and meditation",
-      "startTime": "08:30",
-      "endTime": "09:00"
-    }
-  ]
-}
-
-<> 2023-06-14T024148.200.json
-
-###
-
-POST http://localhost:8080/api/routine/create
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
-Content-Length: 411
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "title": "Morning Routine",
-  "description": "Start the day with a productive routine",
-  "todos": [
-    {
-      "title": "Exercise",
-      "description": "Do some stretching and cardio",
-      "startTime": "08:00",
-      "endTime": "08:30"
-    },
-    {
-      "title": "Meditation",
-      "description": "Practice mindfulness and meditation",
-      "startTime": "08:30",
-      "endTime": "09:00"
-    }
-  ]
-}
-
-<> 2023-06-14T024005.200.json
-
-###
-
-POST http://localhost:8080/api/routine/create
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
-Content-Length: 411
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "title": "Morning Routine",
-  "description": "Start the day with a productive routine",
-  "todos": [
-    {
-      "title": "Exercise",
-      "description": "Do some stretching and cardio",
-      "startTime": "08:00",
-      "endTime": "08:30"
-    },
-    {
-      "title": "Meditation",
-      "description": "Practice mindfulness and meditation",
-      "startTime": "08:30",
-      "endTime": "09:00"
-    }
-  ]
-}
-
-<> 2023-06-14T023911.200.json
-
-###
-
-POST http://localhost:8080/api/routine/create
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
-Content-Length: 411
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "title": "Morning Routine",
-  "description": "Start the day with a productive routine",
-  "todos": [
-    {
-      "title": "Exercise",
-      "description": "Do some stretching and cardio",
-      "startTime": "08:00",
-      "endTime": "08:30"
-    },
-    {
-      "title": "Meditation",
-      "description": "Practice mindfulness and meditation",
-      "startTime": "08:30",
-      "endTime": "09:00"
-    }
-  ]
-}
-
-<> 2023-06-14T023718.200.json
-
-###
-
-POST http://localhost:8080/api/routine/create
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
-Content-Length: 411
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "title": "Morning Routine",
-  "description": "Start the day with a productive routine",
-  "todos": [
-    {
-      "title": "Exercise",
-      "description": "Do some stretching and cardio",
-      "startTime": "08:00",
-      "endTime": "08:30"
-    },
-    {
-      "title": "Meditation",
-      "description": "Practice mindfulness and meditation",
-      "startTime": "08:30",
-      "endTime": "09:00"
-    }
-  ]
-}
-
-<> 2023-06-14T023631.200.json
-
-###
-
-POST http://localhost:8080/api/routine/create
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
-Content-Length: 411
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "title": "Morning Routine",
-  "description": "Start the day with a productive routine",
-  "todos": [
-    {
-      "title": "Exercise",
-      "description": "Do some stretching and cardio",
-      "startTime": "08:00",
-      "endTime": "08:30"
-    },
-    {
-      "title": "Meditation",
-      "description": "Practice mindfulness and meditation",
-      "startTime": "08:30",
-      "endTime": "09:00"
-    }
-  ]
-}
-
-<> 2023-06-14T023512.200.json
-
-###
-
-POST http://localhost:8080/api/routine/create
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25namkiLCJpYXQiOjE2ODY2Nzc2MDUsImV4cCI6MTY4NjY4MTIwNX0.AQuTVJntXpYLVGKBATAo4ge2OLRi7I4qZmM652QL_S4
-Content-Length: 411
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "title": "Morning Routine",
-  "description": "Start the day with a productive routine",
-  "todos": [
-    {
-      "title": "Exercise",
-      "description": "Do some stretching and cardio",
-      "startTime": "08:00",
-      "endTime": "08:30"
-    },
-    {
-      "title": "Meditation",
-      "description": "Practice mindfulness and meditation",
-      "startTime": "08:30",
-      "endTime": "09:00"
-    }
-  ]
-}
-
-<> 2023-06-14T023351.200.json
-
-###
-
-DELETE http://localhost:8080/api/routine/delete/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-14T023253.200.txt
-
-###
-
-GET http://localhost:8080/api/routine/getbyuser
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-14T023237.200.json
-
-###
-
-POST http://localhost:8080/api/routine/create
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2Njc3NTI1LCJleHAiOjE2ODY2ODExMjV9.X7SIDcS_oyLuZ6qlEIzSFpOMaQRZ3FYI8Oli3E0Lhlw
-Content-Length: 411
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "title": "Morning Routine",
-  "description": "Start the day with a productive routine",
-  "todos": [
-    {
-      "title": "Exercise",
-      "description": "Do some stretching and cardio",
-      "startTime": "08:00",
-      "endTime": "08:30"
-    },
-    {
-      "title": "Meditation",
-      "description": "Practice mindfulness and meditation",
-      "startTime": "08:30",
-      "endTime": "09:00"
-    }
-  ]
-}
-
-<> 2023-06-14T023227.200.json
-
-###
-
-GET http://localhost:8080/api/auth/userinfo
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjcwNjI4LCJleHAiOjE2ODY2NzQyMjh9.gwqxkXeUuOWDlSiUw2VklmoZHMcv8mELySzIcqgBD78
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-###
-
-POST http://localhost:8080/api/auth/login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-"email": "test@test.com",
-"password": "123"
-}
-
-<> 2023-06-14T023205-1.200.json
-
-###
-
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 73
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "test@test.com",
-  "username": "test",
-  "password": "123"
-}
-
-<> 2023-06-14T023205.200.json
-
-###
-
-GET http://localhost:8080/api/auth/userinfo
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJrb25nQHRlc3QuY29tIiwiaWF0IjoxNjg2NjcwNjcwLCJleHAiOjE2ODY2NzQyNzB9.WX3zm26c5NhkbjoNRUaS2iZLBG3bPgD7NnjVWaogkns
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-14T003820.200.json
-
-###
-
-POST http://localhost:8080/api/auth/login
-Content-Type: application/json
-Content-Length: 51
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "kong@test.com",
-  "password": "123"
-}
-
-<> 2023-06-14T003750.200.json
-
-###
-
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 73
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "kong@test.com",
-  "username": "test",
-  "password": "123"
-}
-
-<> 2023-06-14T003749.200.json
-
-###
-
-GET http://localhost:8080/api/auth/userinfo
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjcwNjI4LCJleHAiOjE2ODY2NzQyMjh9.gwqxkXeUuOWDlSiUw2VklmoZHMcv8mELySzIcqgBD78
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-14T003718.200.json
-
-###
-
-POST http://localhost:8080/api/auth/login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-"email": "test@test.com",
-"password": "123"
-}
-
-<> 2023-06-14T003708.200.json
-
-###
-
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 73
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "test@test.com",
-  "username": "test",
-  "password": "123"
-}
-
-<> 2023-06-14T003707.200.json
-
-###
-
-GET http://localhost:8080/api/auth/userinfo
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjY5MDcwLCJleHAiOjE2ODY2NzI2NzB9.n1F7sQdppdI3eIHxgm-04-pWobLacDoAJUTTfM2vT0g
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-14T001157.200.json
-
-###
-
-POST http://localhost:8080/api/auth/login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-"email": "test@test.com",
-"password": "123"
-}
-
-<> 2023-06-14T001156.200.json
-
-###
-
-POST http://localhost:8080/api/auth/register
-Content-Type: application/json
-Content-Length: 73
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-  "email": "test@test.com",
-  "username": "test",
-  "password": "123"
-}
-
-<> 2023-06-14T001155.200.json
-
-###
-
-GET http://localhost:8080/api/auth/userinfo
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NjY5MDcwLCJleHAiOjE2ODY2NzI2NzB9.n1F7sQdppdI3eIHxgm-04-pWobLacDoAJUTTfM2vT0g
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-<> 2023-06-14T001121.200.json
-
-###
-
-POST http://localhost:8080/api/auth/login
-Content-Type: application/json
-Content-Length: 47
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
-Accept-Encoding: br,deflate,gzip,x-gzip
-
-{
-"email": "test@test.com",
-"password": "123"
-}
-
-<> 2023-06-14T001110.200.json
 
 ###
 

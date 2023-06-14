@@ -59,4 +59,10 @@ public class RoutineController {
         List<Routine> scrapList = routineService.getScrapRoutine(user);
         return ResponseEntity.ok().body(scrapList);
     }
+    @DeleteMapping("/scrap/delete")
+    public ResponseEntity<String> deleteScrap(@AuthenticationPrincipal User user, @RequestParam("id") Long id){
+        routineService.deleteScrap(user, id);
+        return ResponseEntity.ok("Delete Success");
+
+    }
  }

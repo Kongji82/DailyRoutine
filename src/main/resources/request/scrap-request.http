@@ -1,0 +1,11 @@
+###
+GET http://localhost:8080/api/routine/scrap/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ
+
+###
+GET http://localhost:8080/api/routine/scrap/get
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ
+
+###
+DELETE http://localhost:8080/api/routine/scrap/delete?id=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QHRlc3QuY29tIiwiaWF0IjoxNjg2NzQwNjczLCJleHAiOjE2ODY3NDQyNzN9.W7IVnKqOpTi3la86hSQjwKY3ACVDFU5sBCLlL22PrYQ

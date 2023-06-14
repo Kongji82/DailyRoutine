@@ -10,5 +10,7 @@ public interface RoutineService {
     Routine createRoutine(User user, CreateRoutineDto createRoutineRequest);
     List<Routine> getAllRoutine();
     Routine getRoutineById(Long id);
+    List<Routine> getRoutineByUser(User user);
+    void deleteRoutine(User user, Long id);
 
 }
