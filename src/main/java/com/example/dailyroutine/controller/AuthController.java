@@ -4,12 +4,9 @@ import com.example.dailyroutine.auth.AuthenticationRequest;
 import com.example.dailyroutine.auth.AuthenticationResponse;
 import com.example.dailyroutine.auth.JwtService;
 import com.example.dailyroutine.auth.RegisterRequest;
-import com.example.dailyroutine.entity.User;
 import com.example.dailyroutine.service.AuthServiceImpl;
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;

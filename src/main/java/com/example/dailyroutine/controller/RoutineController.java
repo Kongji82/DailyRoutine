@@ -2,10 +2,8 @@ package com.example.dailyroutine.controller;
 
 import com.example.dailyroutine.dto.CreateRoutineDto;
 import com.example.dailyroutine.entity.Routine;
-import com.example.dailyroutine.entity.Scrap;
 import com.example.dailyroutine.entity.User;
 import com.example.dailyroutine.service.RoutineServiceImpl;
-import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
