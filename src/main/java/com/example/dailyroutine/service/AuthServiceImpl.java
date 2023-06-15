@@ -4,6 +4,7 @@ import com.example.dailyroutine.auth.AuthenticationRequest;
 import com.example.dailyroutine.auth.AuthenticationResponse;
 import com.example.dailyroutine.auth.JwtService;
 import com.example.dailyroutine.auth.RegisterRequest;
+import com.example.dailyroutine.common.exception.EntityDuplicateException;
 import com.example.dailyroutine.entity.Role;
 import com.example.dailyroutine.entity.User;
 import com.example.dailyroutine.repository.UserRepository;
@@ -22,6 +23,9 @@ public class AuthServiceImpl implements AuthService{
     private final AuthenticationManager authenticationManager;
     @Override
     public AuthenticationResponse register(RegisterRequest request) {
+        if(userRepository.existsByEmail(request.getEmail())){
+            throw new EntityDuplicateException("이미 존재하는 이메일입니다.");
+        }
         var user = User.builder()
                 .username(request.getUsername())
                 .email(request.getEmail())

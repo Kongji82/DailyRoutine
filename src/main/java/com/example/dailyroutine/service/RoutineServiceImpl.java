@@ -26,7 +26,6 @@ public class RoutineServiceImpl implements RoutineService, ScrapService{
 
     @Override
     public Routine createRoutine(User user,  CreateRoutineDto createRoutineRequest) {
-        System.out.println(user);
         List<Todo> todos = createRoutineRequest.getTodos().stream()
                 .map(item -> {
                     LocalTime startTime = LocalTime.parse(item.getStartTime());
