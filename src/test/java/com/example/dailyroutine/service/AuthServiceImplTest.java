@@ -2,7 +2,7 @@ package com.example.dailyroutine.service;
 
 import com.example.dailyroutine.auth.AuthenticationResponse;
 import com.example.dailyroutine.auth.JwtService;
-import com.example.dailyroutine.auth.RegisterRequest;
+import com.example.dailyroutine.dto.RegisterRequest;
 import com.example.dailyroutine.entity.Role;
 import com.example.dailyroutine.entity.User;
 import com.example.dailyroutine.repository.UserRepository;

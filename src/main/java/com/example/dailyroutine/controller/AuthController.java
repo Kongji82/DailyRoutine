@@ -1,9 +1,9 @@
 package com.example.dailyroutine.controller;
 
-import com.example.dailyroutine.auth.AuthenticationRequest;
+import com.example.dailyroutine.dto.AuthenticationRequest;
 import com.example.dailyroutine.auth.AuthenticationResponse;
 import com.example.dailyroutine.auth.JwtService;
-import com.example.dailyroutine.auth.RegisterRequest;
+import com.example.dailyroutine.dto.RegisterRequest;
 import com.example.dailyroutine.service.AuthServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -19,12 +19,10 @@ public class AuthController {
     private final JwtService jwtService;
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody RegisterRequest registerRequest){
-        System.out.println(registerRequest);
         return ResponseEntity.ok(authService.register(registerRequest));
     }
     @PostMapping("/login")
     public ResponseEntity<AuthenticationResponse> login(@RequestBody AuthenticationRequest request){
-        System.out.println(request);
         return ResponseEntity.ok(authService.authenticate(request));
     }
 

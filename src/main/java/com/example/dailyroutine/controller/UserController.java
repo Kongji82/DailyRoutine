@@ -19,7 +19,6 @@ public class UserController {
     }
     @PostMapping("/update")
     public ResponseEntity<User> updateUser(@AuthenticationPrincipal User user, @RequestBody UpdateUserDto updateUserDto){
-        System.out.println(updateUserDto);
         User updatedUser = userService.updateUser(user, updateUserDto);
         return ResponseEntity.ok().body(updatedUser);
     }

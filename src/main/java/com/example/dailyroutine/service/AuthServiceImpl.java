@@ -1,9 +1,9 @@
 package com.example.dailyroutine.service;
 
-import com.example.dailyroutine.auth.AuthenticationRequest;
+import com.example.dailyroutine.dto.AuthenticationRequest;
 import com.example.dailyroutine.auth.AuthenticationResponse;
 import com.example.dailyroutine.auth.JwtService;
-import com.example.dailyroutine.auth.RegisterRequest;
+import com.example.dailyroutine.dto.RegisterRequest;
 import com.example.dailyroutine.common.exception.EntityDuplicateException;
 import com.example.dailyroutine.entity.Role;
 import com.example.dailyroutine.entity.User;

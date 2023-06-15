@@ -1,4 +1,4 @@
-package com.example.dailyroutine.auth;
+package com.example.dailyroutine.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

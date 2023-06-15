@@ -13,7 +13,6 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public User updateUser(User user, UpdateUserDto updateUserDto) {
-        System.out.println(user.toString());
         user.setUsername(updateUserDto.getUsername());
         userRepository.save(user);
         return user;
